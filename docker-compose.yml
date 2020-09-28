@@ -9,7 +9,7 @@ services:
       traefik.enable: "true"
       traefik.frontend.rule: PathPrefix:/
       traefik.backend.healthcheck.path: /
-      traefik.backend.healthcheck.interval: 1s
+      traefik.backend.healthcheck.interval: 10s
 
   traefik:
     image: traefik:1.7-alpine

@@ -1,4 +1,5 @@
 ## traefik.yml
+logLevel = "DEBUG"
 
 # Docker configuration backend
 [docker]
