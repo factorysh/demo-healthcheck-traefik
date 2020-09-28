@@ -1,6 +1,19 @@
 Demo healthcheck træfik
 =======================
 
+    make build
+
+    make up
+
+Main site is http://localhost admin is http://localhost:8080
+
+Add a worker :
+
+    make scale-up
+
+Screw a worker :
+
+    make signal
 
 
 Licence
