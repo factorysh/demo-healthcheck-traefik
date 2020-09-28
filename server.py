@@ -2,6 +2,7 @@
 
 import signal
 import os
+import socket
 
 from flask import Flask, abort
 from werkzeug.serving import run_simple
@@ -22,7 +23,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     if state:
-        return 'Hello, World!'
+        return "Hello, World! I'm %s" % socket.gethostname()
     else:
         abort(500)
 
